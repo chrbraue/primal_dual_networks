@@ -19,7 +19,7 @@ import os
 # authorship information 
 # =============================================================================
 __author__ = "Christoph Brauer"
-__copyright__ = "Copyright 2018, Christoph Brauer"
+__copyright__ = "Copyright 2019, Christoph Brauer"
 __credits__ = ["Christoph Brauer"]
 
 __license__ = "GPL"
