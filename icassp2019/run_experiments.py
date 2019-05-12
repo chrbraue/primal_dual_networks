@@ -54,7 +54,8 @@ if not 'S_train' in locals():
     S_dev = uniform_quantization(STilde_dev, bitrate)
     print('finished quantization...')
     # import filters for objective function
-    H_train = sio.loadmat('IEEE_corpus/train_data_filters.mat')['H']
+    H_train = np.column_stack((sio.loadmat('IEEE_corpus/train_data_filters_pt1.mat')['H1'],
+                               sio.loadmat('IEEE_corpus/train_data_filters_pt2.mat')['H2']))
     H_dev = sio.loadmat('IEEE_corpus/dev_data_filters.mat')['H']
     # flip weighting filters
     H_train = np.flip(H_train, 0)
